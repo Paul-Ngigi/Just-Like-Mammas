@@ -3,18 +3,13 @@
     font-family: 'Poppins', sans-serif;
 }
 #landing-page{
-    background-image: url("../images/pizza.jpg");
-    background-size: cover;
-    height: 93vh;
-    line-height: 5rem;
+    line-height: 4rem;
 }
 #landing-page h1{
     font-size: 46px;
     font-weight: 800;
-    word-spacing: 2rem;
 }
 #landing-page p{
     font-size: 30px;
-    font-weight: 700;
-
+    font-weight: 500;
 }
