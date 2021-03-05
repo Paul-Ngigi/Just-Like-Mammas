@@ -2,14 +2,27 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-#landing-page{
+.navbar-brand{
+    font-size: 30px;
+}
+
+/* Landing Page */
+#landingPage{
     line-height: 4rem;
 }
-#landing-page h1{
+#landingPage h1{
     font-size: 46px;
     font-weight: 800;
 }
-#landing-page p{
+#landingPage p{
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
 }
+.heading h2{
+    font-size: 34px;
+    font-weight: 600;
+}
+.heading h2:hover{
+    color: brown;
+}
+/* Order */

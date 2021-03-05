@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fas fa-pizza-slice"></i></a>
+            <a class="navbar-brand" href="#landingPage"><i class="fas fa-pizza-slice"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#landingPage">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#order">Place Order</a>
@@ -44,7 +44,7 @@
     </nav>
 
     <div class="container">
-        <div id="landing-page">
+        <div id="landingPage">
             <!-- Landing Page -->
             <div class="row p-5">
                 <div class="col-md-12">
@@ -57,16 +57,17 @@
                 </div>
             </div>
 
+            <!-- Pizza Sizes -->
+            <div class="heading">
+                <h2>AVAILABLE PIZZA SIZES</h2>
+            </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="./images/pizza1.webp" class="card-img-top" alt="...">
+                        <img src="./images/pizza3.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Small Size</h5>
+                            <h2 class="card-title">Small Size</h2>
                             <p class="card-text"></p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Place your <a href="">order</a> now</small>
                         </div>
                     </div>
                 </div>
@@ -77,26 +78,128 @@
                             <h2 class="card-title">Medium Size</h2>
                             <p class="card-text"></p>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Place your <a href="">order</a> now</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/pizza1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Large Size</h2>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toppings -->
+            <div class="heading mt-5">
+                <h2>AVAILABLE PIZZA TOPPINGS</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Capricciosa-Ham-Artichoke-Mushrooms-Olives_7.jpg" height="500" width="500" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Capricciosa Ham Artichoke Mushrooms Olives</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="./images/pizza3.webp" class="card-img-top" alt="...">
+                        <img src="./images/Cheese-Garlic-Oregano_4.jpg" height="500" width="500"  class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Large Size</h5>
-                            <p class="card-text"></p>
+                            <h2 class="card-title">Cheese Garlic Oregano</h2>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Place your <a href="">order</a> now</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Ham-and-Pineapple.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Ham and Pineapple</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Margherita-pizza-overhead.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Margherita pizza overhead</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Meatlovers-1.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Meatlovers</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/PepperoniPizza.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Pepperoni Pizza</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Potato-Rosemary-Pizza_2.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Potato-Rosemary-Pizza</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Prawn-Pizza_1.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Prawn Pizza</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Proscuitto-Rocket-Pizza.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Proscuitto Rocket Pizza</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Quattro-Formaggio-Four-Cheese-Pizza_1.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Quattro Formaggio Four Cheese Pizza</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Sausage-and-kale-pizza.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Sausage and kale pizza</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./images/Supreme-Pizza.jpg" height="500" width="500"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Supreme Pizza</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
 </body>
