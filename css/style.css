@@ -5,6 +5,9 @@
 .navbar-brand{
     font-size: 30px;
 }
+.navbar-brand i:hover{
+    color: indianred;
+}
 
 /* Landing Page */
 #landingPage{
