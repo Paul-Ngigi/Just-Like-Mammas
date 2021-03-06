@@ -1,3 +1,4 @@
+$(document).ready(function(){
 // Business Logic
 function order(size,topping,crust){
     this.Pizzasize = size;
@@ -10,3 +11,8 @@ function addresses(county,city,street){
     this.city = city;
     this.street = street;
 }
+
+// User Interface Logic
+
+    console.log("Content Loaded");
+});
