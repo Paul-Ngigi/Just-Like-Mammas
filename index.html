@@ -251,32 +251,30 @@
                             <option value="Gluten-Free">Gluten-Free</option>
                           </select>
                           <!-- Delivery Details -->
-                          <div class="row mt-3">
-                              <h4>Delivery Location</h4>
-                              <div class="col-md-4">
-                                <div class="mb-3">
-                                    <label for="location" class="form-label">County</label>
-                                    <input type="text" class="form-control" id="county" placeholder="Nairobi">
-                                  </div>
-                              </div>
-                              <div class="col-md-4">
-                                <div class="mb-3">
-                                    <label for="location" class="form-label">City</label>
-                                    <input type="text" class="form-control" id="city" placeholder="Nairobi">
-                                  </div>
-                              </div>
-                              <div class="col-md-4">
-                                <div class="mb-3">
-                                    <label for="location" class="form-label">Street</label>
-                                    <input type="text" class="form-control" id="street" placeholder="Tom Mboya">
-                                  </div>
-                              </div>
-                              <p class="text-muted">
-                                Cost of delivery is Ksh 200. <br> NB : Delivery is not compulsory, if you are near 
-                                our shop you can still come and pick up your order.
-                              </p>
+                          <div id="newAddress">
+                            <div class="row mt-3">
+                                <h4>Delivery Location</h4>
+                                <div class="col-md-4">
+                                  <div class="mb-3">
+                                      <label for="location" class="form-label">County</label>
+                                      <input type="text" class="form-control" id="county" placeholder="Nairobi">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="mb-3">
+                                      <label for="location" class="form-label">City</label>
+                                      <input type="text" class="form-control" id="city" placeholder="Nairobi">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="mb-3">
+                                      <label for="location" class="form-label">Street</label>
+                                      <input type="text" class="form-control" id="street" placeholder="Tom Mboya">
+                                    </div>
+                                </div>
+                            </div>
                           </div>
-                        <button type="submit" class="btn btn-success mt-3">Place Another Order</button>
+                        <button type="submit" id="addOrder" class="btn btn-success mt-3">Place Another Order</button>
                         <button type="submit" class="btn btn-primary mt-3">Place Order</button>
                       </form>
                 </div>
@@ -287,7 +285,19 @@
         <div id="contactUs">
             <div class="row mt-5">
                 <div class="col-md-12">
-                    
+                    <form id="contactForm">
+                        <div class="heading">
+                            <h2>Contact Us</h2>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <label for="comment" class="form-label">Comment Below</label><br>
+                        <textarea name="" id="" cols="60" rows="10"></textarea><br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
                 </div>
             </div>
         </div>
