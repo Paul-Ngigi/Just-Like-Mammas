@@ -29,6 +29,9 @@
     color: brown;
 }
 /* Order */
+#orderCheckout{
+    display: none;
+}
 #newAddress{
     display: none;
 }
