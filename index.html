@@ -177,7 +177,7 @@
         <!-- Place Order Section -->
         <div id="order">
             <div class="row mt-5">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <form id="orderForm">
                         <div class="heading">
                             <h2>Place Your Order</h2>
@@ -186,44 +186,58 @@
                             <!-- Pizza Size -->
                             <select class="size form-select" aria-label="Default select example" required>
                                 <option selected>Choose Your Pizza Size</option>
-                                <option value="small">Small @ 500</option>
-                                <option value="large">Medium @ 800</option>
-                                <option value="medium">Large @ 1200 </option>
+                                <option value="Small">Small @ 500</option>
+                                <option value="Large">Medium @ 800</option>
+                                <option value="Medium">Large @ 1200 </option>
                             </select>
                             <!-- Pizza Topping -->
                             <div class="topping mt-3">
                                 <h4>Choose Your Favourite Toppings</h4>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Meatlovers (Ksh 50)</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                    <label class="form-check-label" for="inlineCheckbox2">Pepperoni Pizza (Ksh 80)</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Pepperoni Pizza (Ksh
+                                        80)</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox3">Potato-Rosemary-Pizza (Ksh 50)</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Potato-Rosemary-Pizza (Ksh
+                                        50)</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Prawn Pizza (Ksh 60)</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Proscuitto Rocket Pizza (Ksh 70)</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Proscuitto Rocket Pizza (Ksh
+                                        70)</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Quattro Formaggio Four Cheese Pizza (Ksh 90)</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Quattro Formaggio Four Cheese
+                                        Pizza (Ksh 90)</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Sausage and kale pizza (Ksh 50)</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Sausage and kale pizza (Ksh
+                                        50)</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Supreme Pizza (Ksh 100)</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Supreme Pizza (Ksh
+                                        100)</label>
                                 </div>
                             </div>
                             <!-- Pizza Crust -->
@@ -267,8 +281,20 @@
                         <button type="submit" id="addOrder" class="btn btn-success mt-3">Place Another Order</button>
                         <button type="submit" id="addDelivery" class="btn btn-success mt-3">Add Delivery
                             Location</button>
+                        <button type="submit" id="checkoutBtn" class="btn btn-success mt-3">Checkout Your Order</button>
                         <button type="submit" class="btn btn-primary mt-3">Place Order</button>
                     </form>
+                </div>
+                <div class="col-md-6">
+                    <div id="orderCheckout">
+                        <div class="heading">
+                            <h2>Your Order</h2>
+                            <p class="size">Pizza Size: </p>
+                            <p class="topping">Pizza Topping: </p>
+                            <p class="crust">Pizza Crust: </p>
+                            <p class="location">Delivery Location: </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
