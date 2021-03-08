@@ -12,7 +12,22 @@ $(document).ready(function () {
         this.city = city;
         this.street = street;
     }
+    function OrderCost(sizeCost, toppingCost, crustCost, deliveryCost, totalCost) {
+        this.sizeCost = sizeCost;
+        this.toppingCost = toppingCost;
+        this.crustCost = crustCost;
+        this.deliveryCost = deliveryCost;
+        this.totalCost = totalCost;
 
+        totalCost = sizeCost + toppingCost + crustCost + deliveryCost;
+    }
+
+    Order.prototype.fullOrder = function () {
+        return "Pizza size: " + this.Pizzasize + " " + "Pizza Topping: " + this.Pizzatopping + " " + "Pizza Crust: " + this.Pizzacrust;
+    };
+    Addresses.prototype.fullAddress = function () {
+        return this.street + ", " + this.city + ", " + this.county;
+      }
 
     // User Interface Logic
     function resetFields() {
@@ -80,13 +95,14 @@ $(document).ready(function () {
         event.preventDefault();
 
         let inputtedPizzaSize = $("select.size").val();
-        let inputtedPizzaTopping = $("select.topping").val();
+        let inputtedPizzaTopping = $(".topping").val();
         let inputtedPizzaCrust = $("select.crust").val();
         let newOrder = new Order(inputtedPizzaSize, inputtedPizzaTopping, inputtedPizzaCrust);
 
         // console.log("Pizza size " , inputtedPizzaSize);
         // console.log("Pizza topping " , inputtedPizzaTopping);
         // console.log("Pizza crust " , inputtedPizzaCrust);
+        // console.log(newOrder);
 
         $("#new-address").each(function () {
             let inputtedCounty = $(this).find("input#county").val();
@@ -100,8 +116,17 @@ $(document).ready(function () {
         // console.log("County " , inputtedCounty);
         // console.log("City " , inputtedCity);
         // console.log("Street " , inputtedStreet);s
+    });
 
-
+    $("#checkoutBtn").click(function () {
+        $("#orderCheckout").show();
+        $(".size").text(Order.Pizzasize);
+        $(".topping").text(Order.Pizzatopping);
+        $(".crust").text(Order.Pizzacrust);
+        $(".location").text(Addresses.fullAddress);
+    });
+    $("#contactUs").submit(function () {
+        alert("Thank You For Your Feedback")
     });
 
 });
