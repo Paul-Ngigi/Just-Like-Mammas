@@ -29,3 +29,6 @@
     color: brown;
 }
 /* Order */
+#newAddress{
+    display: none;
+}

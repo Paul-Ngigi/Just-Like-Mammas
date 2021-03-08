@@ -69,7 +69,7 @@
                             <h2 class="card-title">Small Size</h2>
                             <div class="card-footer">
                                 <small class="text-muted">Ksh 500</small>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                             <h2 class="card-title">Medium Size</h2>
                             <div class="card-footer">
                                 <small class="text-muted">Ksh 800</small>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                             <h2 class="card-title">Large Size</h2>
                             <div class="card-footer">
                                 <small class="text-muted">Ksh 1200</small>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,44 +99,6 @@
             <!-- Toppings -->
             <div class="heading mt-5">
                 <h2>AVAILABLE PIZZA TOPPINGS</h2>
-            </div>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./images/Capricciosa-Ham-Artichoke-Mushrooms-Olives_7.jpg" height="300" width="400"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">Capricciosa Ham Artichoke Mushrooms Olives</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./images/Cheese-Garlic-Oregano_4.jpg" height="300" width="400" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">Cheese Garlic Oregano</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./images/Ham-and-Pineapple.jpg" height="300" width="400" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">Ham and Pineapple</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./images/Margherita-pizza-overhead.jpg" height="300" width="400" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">Margherita pizza overhead</h2>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="row mt-3 row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
@@ -220,63 +182,93 @@
                         <div class="heading">
                             <h2>Place Your Order</h2>
                         </div>
-                        <!-- Pizza Size -->
-                        <select class="size form-select" aria-label="Default select example">
-                            <option selected>Choose Your Pizza Size</option>
-                            <option value="small">Small</option>
-                            <option value="large">Medium</option>
-                            <option value="medium">Large</option>
-                          </select>
-                          <!-- Pizza Topping -->
-                          <select class="topping form-select mt-3" aria-label="Default select example">
-                            <option selected>Choose Your Pizza Topping</option>
-                            <option value="Capricciosa Ham Artichoke Mushrooms Olives">Capricciosa Ham Artichoke Mushrooms Olives</option>
-                            <option value="Cheese Garlic Oregano">Cheese Garlic Oregano</option>
-                            <option value="Ham and Pineapple">Ham and Pineapple</option>
-                            <option value="Margherita pizza overhead">Margherita pizza overhead</option>
-                            <option value="Meatlovers">Meatlovers</option>
-                            <option value="Pepperoni Pizza">Pepperoni Pizza</option>
-                            <option value="Potato-Rosemary-Pizza">Potato-Rosemary-Pizza</option>
-                            <option value="Prawn Pizza">Prawn Pizza</option>
-                            <option value="Proscuitto Rocket Pizza">Proscuitto Rocket Pizza</option>
-                            <option value="Quattro Formaggio Four Cheese Pizza">Quattro Formaggio Four Cheese Pizza</option>
-                            <option value="Sausage and kale pizza">Sausage and kale pizza</option>
-                            <option value="Supreme Pizza">Supreme Pizza</option>
-                          </select>
-                          <!-- Pizza Crust -->
-                          <select class="crust form-select mt-3" aria-label="Default select example">
-                            <option selected>Choose Your Pizza Crust</option>
-                            <option value="Crispy">Crispy</option>
-                            <option value="Stuffed">Stuffed</option>
-                            <option value="Gluten-Free">Gluten-Free</option>
-                          </select>
-                          <!-- Delivery Details -->
-                          <div id="newAddress">
+                        <div id="pizzaOrder">
+                            <!-- Pizza Size -->
+                            <select class="size form-select" aria-label="Default select example" required>
+                                <option selected>Choose Your Pizza Size</option>
+                                <option value="small">Small @ 500</option>
+                                <option value="large">Medium @ 800</option>
+                                <option value="medium">Large @ 1200 </option>
+                            </select>
+                            <!-- Pizza Topping -->
+                            <div class="topping mt-3">
+                                <h4>Choose Your Favourite Toppings</h4>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Meatlovers (Ksh 50)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Pepperoni Pizza (Ksh 80)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Potato-Rosemary-Pizza (Ksh 50)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Prawn Pizza (Ksh 60)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Proscuitto Rocket Pizza (Ksh 70)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Quattro Formaggio Four Cheese Pizza (Ksh 90)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Sausage and kale pizza (Ksh 50)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Supreme Pizza (Ksh 100)</label>
+                                </div>
+                            </div>
+                            <!-- Pizza Crust -->
+                            <select class="crust form-select mt-3" aria-label="Default select example" required>
+                                <option selected>Choose Your Pizza Crust</option>
+                                <option value="Crispy">Crispy @ Ksh 100</option>
+                                <option value="Stuffed">Stuffed @ Ksh 150</option>
+                                <option value="Gluten-Free">Gluten-Free @ Ksh 200</option>
+                            </select>
+                            <!-- Number of pizzas -->
+                            <input type="number" class="form-control mt-3" id="pizzaNumber"
+                                placeholder="Number of pizzas" min="1" required />
+                        </div>
+                        <!-- Delivery Details -->
+                        <div id="newAddress">
                             <div class="row mt-3">
                                 <h4>Delivery Location</h4>
                                 <div class="col-md-4">
-                                  <div class="mb-3">
-                                      <label for="location" class="form-label">County</label>
-                                      <input type="text" class="form-control" id="county" placeholder="Nairobi">
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">County</label>
+                                        <input type="text" class="form-control" id="county" placeholder="Nairobi">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                  <div class="mb-3">
-                                      <label for="location" class="form-label">City</label>
-                                      <input type="text" class="form-control" id="city" placeholder="Nairobi">
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="city" placeholder="Nairobi">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                  <div class="mb-3">
-                                      <label for="location" class="form-label">Street</label>
-                                      <input type="text" class="form-control" id="street" placeholder="Tom Mboya">
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">Street</label>
+                                        <input type="text" class="form-control" id="street" placeholder="Tom Mboya">
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                            <div class="text-muted">
+                                <p>All deliveries are charged Ksh 300</p>
+                            </div>
+                        </div>
                         <button type="submit" id="addOrder" class="btn btn-success mt-3">Place Another Order</button>
+                        <button type="submit" id="addDelivery" class="btn btn-success mt-3">Add Delivery
+                            Location</button>
                         <button type="submit" class="btn btn-primary mt-3">Place Order</button>
-                      </form>
+                    </form>
                 </div>
             </div>
         </div>
@@ -290,14 +282,18 @@
                             <h2>Contact Us</h2>
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="Contactemail" aria-describedby="emailHelp"
+                                required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
-                        <label for="comment" class="form-label">Comment Below</label><br>
-                        <textarea name="" id="" cols="60" rows="10"></textarea><br>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
