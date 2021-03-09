@@ -27,10 +27,11 @@ $(document).ready(function () {
     };
     Addresses.prototype.fullAddress = function () {
         return this.street + ", " + this.city + ", " + this.county;
-      }
+    }
 
     // User Interface Logic
     function resetFields() {
+        $("input#pizzaNumber").val("");
         $("input#county").val("");
         $("input#city").val("");
         $("input#street").val("");
@@ -97,6 +98,7 @@ $(document).ready(function () {
         let inputtedPizzaSize = $("select.size").val();
         let inputtedPizzaTopping = $(".topping").val();
         let inputtedPizzaCrust = $("select.crust").val();
+        let inputtedPizzaNumber = $("input#pizzaNumber").val();
         let newOrder = new Order(inputtedPizzaSize, inputtedPizzaTopping, inputtedPizzaCrust);
 
         // console.log("Pizza size " , inputtedPizzaSize);
@@ -110,21 +112,28 @@ $(document).ready(function () {
             let inputtedStreet = $(this).find("input#street").val();
             let newAddress = new Addresses(inputtedCounty, inputtedCity, inputtedStreet);
             newOrder.address.push(newAddress);
-        })
-        // console.log(newOrder);
 
-        // console.log("County " , inputtedCounty);
-        // console.log("City " , inputtedCity);
-        // console.log("Street " , inputtedStreet);s
+            // console.log("County " , inputtedCounty);
+            // console.log("City " , inputtedCity);
+            // console.log("Street " , inputtedStreet);s
+        });
+        
+        $("#checkoutBtn").click(function () {
+            $("#orderCheckout").show();
+            $(".size").text(Order.Pizzasize);
+            $(".topping").text(Order.Pizzatopping);
+            $(".crust").text(Order.Pizzacrust);
+            $(".location").text(Addresses.fullAddress);
+        });
+        
+        let orderConfirmation = false
+        orderConfirmation = confirm("Please confirm your order");
+        if (orderConfirmation == true) {
+            alert("Order Placed Successfully");
+        }
     });
-
-    $("#checkoutBtn").click(function () {
-        $("#orderCheckout").show();
-        $(".size").text(Order.Pizzasize);
-        $(".topping").text(Order.Pizzatopping);
-        $(".crust").text(Order.Pizzacrust);
-        $(".location").text(Addresses.fullAddress);
-    });
+    
+    // Calculating the total order  
     $("#contactUs").submit(function () {
         alert("Thank You For Your Feedback")
     });
